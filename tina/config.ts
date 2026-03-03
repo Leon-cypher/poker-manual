@@ -1,8 +1,8 @@
 import { defineConfig } from "tinacms";
 
-// 定義我們的內容模型 (Collections)
+// TinaCMS 配置 - 樂玩德州撲克內部手冊
 export default defineConfig({
-  branch: "main", // 我們推送到 GitHub 的分支
+  branch: "main", // 確保此分支已在 GitHub 中推送
   clientId: "9cbfef65-81b5-498f-85dc-9744a88824d1", // 您的 Tina Client ID
   token: "39301ee276b5e52ccd0eec5a26af0318b18b2343", // 您的 Tina Token
   build: {
