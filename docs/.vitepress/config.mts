@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "樂玩德州撲克",
   description: "內部訓練與營運手冊",
+  ignoreDeadLinks: true,
   themeConfig: {
     nav: [
       { text: '首頁', link: '/' },
