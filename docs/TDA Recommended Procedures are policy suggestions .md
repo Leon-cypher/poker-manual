@@ -1,0 +1,1 @@
+# TDA Recommended Procedures are policy suggestions to reduce errors and improve event management. They also may apply to situations with too many variations to address in one universal rule. The fairest ruling in these cases may require use of multiple rules, evaluation of all circumstances, and reliance on Rule 1 as a primary guide.
