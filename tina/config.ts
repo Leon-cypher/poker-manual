@@ -7,7 +7,7 @@ export default defineConfig({
   token: "39301ee276b5e52ccd0eec5a26af0318b18b2343", // 您的 Tina Token
   build: {
     outputFolder: "admin", // 後台管理介面的路徑
-    publicFolder: "docs/.vitepress/dist", // 靜態檔案存放路徑
+    publicFolder: "docs/public", // 調整為 docs/public，讓 VitePress 自動處理
   },
   media: {
     tina: {
