@@ -3,7 +3,7 @@ import { defineConfig } from "tinacms";
 // 定義我們的內容模型 (Collections)
 export default defineConfig({
   branch: "main", // 我們推送到 GitHub 的分支
-  clientId: process.env.TINA_CLIENT_ID || "", // 之後註冊 Tina Cloud 時會拿到
+  clientId: "9cbfef65-81b5-498f-85dc-9744a88824d1", // 您的 Tina Client ID
   token: process.env.TINA_TOKEN || "", // 之後註冊 Tina Cloud 時會拿到
   build: {
     outputFolder: "admin", // 後台管理介面的路徑
