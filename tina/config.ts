@@ -4,7 +4,7 @@ import { defineConfig } from "tinacms";
 export default defineConfig({
   branch: "main", // 我們推送到 GitHub 的分支
   clientId: "9cbfef65-81b5-498f-85dc-9744a88824d1", // 您的 Tina Client ID
-  token: process.env.TINA_TOKEN || "", // 之後註冊 Tina Cloud 時會拿到
+  token: "39301ee276b5e52ccd0eec5a26af0318b18b2343", // 您的 Tina Token
   build: {
     outputFolder: "admin", // 後台管理介面的路徑
     publicFolder: "docs/.vitepress/dist", // 靜態檔案存放路徑
