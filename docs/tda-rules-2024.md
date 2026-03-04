@@ -1,4 +1,7 @@
-﻿# 2024 Chinese Poker TDA Rules DOCX Longform Redlines Vers 1.0 FINAL
+---
+title: "2024 Chinese Poker TDA Rules DOCX Longform Redlines Vers 1.0 FINAL"
+---
+# 2024 Chinese Poker TDA Rules DOCX Longform Redlines Vers 1.0 FINAL
 
 [無標題](%E7%84%A1%E6%A8%99%E9%A1%8C%202f3692631c7281a08374c443148e607d.csv)
 
