@@ -5,7 +5,11 @@ title: "📅 DAY 4｜培訓課表"
 
 # DAY 4：異常狀況＋違規處理＋考核
 
-> 📄 **完整 5 天課程表**：[下載／開啟 PDF](/training-schedule.pdf)
+## 📄 完整培訓課程表（5 天總覽）
+
+[![培訓課程表](/schedule-page-1.png)](/training-schedule.pdf)
+
+*點擊圖片可下載原始 PDF*
 
 ---
 

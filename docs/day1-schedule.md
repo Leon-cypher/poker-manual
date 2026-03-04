@@ -7,9 +7,9 @@ title: "📅 DAY 1｜培訓課表"
 
 ## 📄 完整培訓課程表（5 天總覽）
 
-<object data="/training-schedule.pdf" type="application/pdf" width="100%" height="600px">
-  <p>瀏覽器不支援 PDF 預覽，請 <a href="/training-schedule.pdf" target="_blank">點此下載開啟</a></p>
-</object>
+[![培訓課程表](/schedule-page-1.png)](/training-schedule.pdf)
+
+*點擊圖片可下載原始 PDF*
 
 ---
 

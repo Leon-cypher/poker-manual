@@ -5,7 +5,11 @@ title: "📅 DAY 3｜培訓課表"
 
 # DAY 3：考核：牌力＋主邊池
 
-> 📄 **完整 5 天課程表**：[下載／開啟 PDF](/training-schedule.pdf)
+## 📄 完整培訓課程表（5 天總覽）
+
+[![培訓課程表](/schedule-page-1.png)](/training-schedule.pdf)
+
+*點擊圖片可下載原始 PDF*
 
 ---
 
