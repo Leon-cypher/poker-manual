@@ -5,20 +5,13 @@ title: "📅 DAY 1｜培訓課表"
 
 # DAY 1：基礎動作＋規則入門
 
+## 📄 完整培訓課程表（5 天總覽）
 
-📋
-
-**5 天培訓總覽**
-
-- DAY 1：基礎動作＋規則入門
-- DAY 2：點碼＋下注判定
-- DAY 3：考核：牌力＋主邊池
-- DAY 4：異常狀況＋違規處理＋考核
-- DAY 5：整合實作＋外場＋總考核
-
+<object data="/training-schedule.pdf" type="application/pdf" width="100%" height="600px">
+  <p>瀏覽器不支援 PDF 預覽，請 <a href="/training-schedule.pdf" target="_blank">點此下載開啟</a></p>
+</object>
 
 ---
-
 
 ## 課程時間表
 
