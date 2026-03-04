@@ -49,13 +49,7 @@ export default defineConfig({
       {
         text: '⚖️ 判決與規則 (TDA)',
         items: [
-          { text: '有效行動 (SA) 定義', link: '/有效行動（SA）定義' },
-          { text: '50% 規則：不足最小加注', link: '/50規則：不足最小加注怎麼判？' },
-          { text: '多顆籌碼下注判定', link: '/多顆籌碼下注（Multi-chip）判定：先看能不能拿掉最小顆' },
-          { text: '一次動作原則', link: '/一次動作原則（下注不可反悔）' },
-          { text: '短碼 All-in 重開加注？', link: '/短碼 All-in：什麼時候不會重新打開加注？' },
-          { text: '錯發 (Misdeal) 規定', link: '/錯發（Misdeal）何時不能宣告？' },
-          { text: '攤牌順序：誰先亮牌？', link: '/攤牌順序：誰先亮牌？' },
+          { text: '規則快速參考', link: '/規則快速參考' },
         ]
       }
     ],
