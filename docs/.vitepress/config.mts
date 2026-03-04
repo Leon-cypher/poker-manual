@@ -50,6 +50,7 @@ export default defineConfig({
         text: '⚖️ 判決與規則 (TDA)',
         items: [
           { text: '規則快速參考', link: '/規則快速參考' },
+          { text: '如何成為一個好的裁判', link: '/floor-judge-guide' },
         ]
       }
     ],
