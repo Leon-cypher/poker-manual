@@ -36,13 +36,10 @@ var config_default = defineConfig({
             required: true
           },
           {
-            type: "string",
+            type: "rich-text",
             name: "body",
             label: "\u5167\u5BB9",
-            isBody: true,
-            ui: {
-              component: "textarea"
-            }
+            isBody: true
           }
         ]
       }

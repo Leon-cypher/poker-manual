@@ -168,7 +168,7 @@ export type DocumentNode = Manual | Folder;
 export type Manual = Node & Document & {
   __typename?: 'Manual';
   title: Scalars['String']['output'];
-  body?: Maybe<Scalars['String']['output']>;
+  body?: Maybe<Scalars['JSON']['output']>;
   id: Scalars['ID']['output'];
   _sys: SystemInfo;
   _values: Scalars['JSON']['output'];
@@ -181,9 +181,15 @@ export type StringFilter = {
   in?: InputMaybe<Array<InputMaybe<Scalars['String']['input']>>>;
 };
 
+export type RichTextFilter = {
+  startsWith?: InputMaybe<Scalars['String']['input']>;
+  eq?: InputMaybe<Scalars['String']['input']>;
+  exists?: InputMaybe<Scalars['Boolean']['input']>;
+};
+
 export type ManualFilter = {
   title?: InputMaybe<StringFilter>;
-  body?: InputMaybe<StringFilter>;
+  body?: InputMaybe<RichTextFilter>;
 };
 
 export type ManualConnectionEdges = {
@@ -266,17 +272,17 @@ export type DocumentMutation = {
 
 export type ManualMutation = {
   title?: InputMaybe<Scalars['String']['input']>;
-  body?: InputMaybe<Scalars['String']['input']>;
+  body?: InputMaybe<Scalars['JSON']['input']>;
 };
 
-export type ManualPartsFragment = { __typename: 'Manual', title: string, body?: string | null };
+export type ManualPartsFragment = { __typename: 'Manual', title: string, body?: any | null };
 
 export type ManualQueryVariables = Exact<{
   relativePath: Scalars['String']['input'];
 }>;
 
 
-export type ManualQuery = { __typename?: 'Query', manual: { __typename: 'Manual', id: string, title: string, body?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
+export type ManualQuery = { __typename?: 'Query', manual: { __typename: 'Manual', id: string, title: string, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } };
 
 export type ManualConnectionQueryVariables = Exact<{
   before?: InputMaybe<Scalars['String']['input']>;
@@ -288,7 +294,7 @@ export type ManualConnectionQueryVariables = Exact<{
 }>;
 
 
-export type ManualConnectionQuery = { __typename?: 'Query', manualConnection: { __typename?: 'ManualConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ManualConnectionEdges', cursor: string, node?: { __typename: 'Manual', id: string, title: string, body?: string | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
+export type ManualConnectionQuery = { __typename?: 'Query', manualConnection: { __typename?: 'ManualConnection', totalCount: number, pageInfo: { __typename?: 'PageInfo', hasPreviousPage: boolean, hasNextPage: boolean, startCursor: string, endCursor: string }, edges?: Array<{ __typename?: 'ManualConnectionEdges', cursor: string, node?: { __typename: 'Manual', id: string, title: string, body?: any | null, _sys: { __typename?: 'SystemInfo', filename: string, basename: string, hasReferences?: boolean | null, breadcrumbs: Array<string>, path: string, relativePath: string, extension: string } } | null } | null> | null } };
 
 export const ManualPartsFragmentDoc = gql`
     fragment ManualParts on Manual {

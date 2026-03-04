@@ -89,7 +89,7 @@ union DocumentNode = Manual | Folder
 
 type Manual implements Node & Document {
   title: String!
-  body: String
+  body: JSON
   id: ID!
   _sys: SystemInfo!
   _values: JSON!
@@ -102,9 +102,15 @@ input StringFilter {
   in: [String]
 }
 
+input RichTextFilter {
+  startsWith: String
+  eq: String
+  exists: Boolean
+}
+
 input ManualFilter {
   title: StringFilter
-  body: StringFilter
+  body: RichTextFilter
 }
 
 type ManualConnectionEdges {
@@ -139,7 +145,7 @@ input DocumentMutation {
 
 input ManualMutation {
   title: String
-  body: String
+  body: JSON
 }
 
 schema {

@@ -31,13 +31,10 @@ export default defineConfig({
             required: true,
           },
           {
-            type: "string",
+            type: "rich-text",
             name: "body",
             label: "內容",
             isBody: true,
-            ui: {
-              component: "textarea",
-            },
           },
         ],
       },
