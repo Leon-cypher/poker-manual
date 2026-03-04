@@ -5,7 +5,7 @@
     "main": "index.js",
     "scripts": {
         "docs:dev": "vitepress dev docs",
-        "docs:build": "tinacms build || true && vitepress build docs",
+        "docs:build": "tinacms build --skip-cloud-checks && vitepress build docs",
         "docs:preview": "vitepress preview docs"
     },
     "keywords": [],
