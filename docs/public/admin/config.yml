@@ -1,0 +1,48 @@
+backend:
+  name: github
+  repo: Leon-cypher/poker-manual
+  branch: main
+  base_url: https://poker-manual.pages.dev  # 你的 Cloudflare Pages 網址
+
+media_folder: docs/public
+public_folder: /
+
+locale: zh_Hant
+
+collections:
+  - name: manual
+    label: 核心手冊
+    folder: docs
+    create: true
+    extension: md
+    fields:
+      - { label: 標題, name: title, widget: string }
+      - { label: 內容, name: body, widget: markdown }
+
+  - name: manual_named
+    label: 指定手冊頁面
+    files:
+      - label: 荷官手冊
+        name: dealer
+        file: docs/荷官手冊.md
+        fields:
+          - { label: 標題, name: title, widget: string }
+          - { label: 內容, name: body, widget: markdown }
+      - label: 服務 (智)
+        name: service
+        file: docs/服務_ 智.md
+        fields:
+          - { label: 標題, name: title, widget: string }
+          - { label: 內容, name: body, widget: markdown }
+      - label: 外場工作 (亮)
+        name: floor
+        file: docs/外場工作_ 亮.md
+        fields:
+          - { label: 標題, name: title, widget: string }
+          - { label: 內容, name: body, widget: markdown }
+      - label: 櫃檯場控 (佑恩)
+        name: counter
+        file: docs/櫃檯場控／佑恩.md
+        fields:
+          - { label: 標題, name: title, widget: string }
+          - { label: 內容, name: body, widget: markdown }
