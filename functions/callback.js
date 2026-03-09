@@ -9,7 +9,7 @@ export async function onRequest(context) {
       Accept: 'application/json',
     },
     body: JSON.stringify({
-      client_id: context.env.GITHUB_CLIENT_ID,
+      client_id: context.env.GITHUB_CLIENT_ID || 'Ov23lits6BN4XCcaxaU8',
       client_secret: context.env.GITHUB_CLIENT_SECRET,
       code,
     }),
@@ -17,15 +17,24 @@ export async function onRequest(context) {
 
   const data = await res.json()
   const token = data.access_token
+  const message = 'authorization:github:success:' + JSON.stringify({ token, provider: 'github' })
 
-  const html = `
-    <script>
-      window.opener.postMessage(
-        'authorization:github:success:${JSON.stringify({ token, provider: 'github' })}',
-        '*'
-      )
-      window.close()
-    </script>
-  `
+  const html = `<!DOCTYPE html>
+<html>
+<body>
+<script>
+  (function() {
+    var message = ${JSON.stringify(message)};
+    if (window.opener) {
+      window.opener.postMessage(message, '*');
+      setTimeout(function() { window.close(); }, 500);
+    } else {
+      document.body.innerText = '授權完成，請關閉此視窗。';
+    }
+  })();
+</script>
+</body>
+</html>`
+
   return new Response(html, { headers: { 'Content-Type': 'text/html' } })
 }
